@@ -104,6 +104,9 @@ body{
         margin-left: 2%;
         margin-top: 20%;
     }  
+    .social{
+        margin-left: 50%;
+    }
 
 }
 @media (max-width: 1200px) {
