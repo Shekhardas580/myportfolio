@@ -95,21 +95,21 @@ body{
 
 
 @media (max-width: 600px) {
-    .social{
-        margin-left: 40px;
-    }
+    
 }
 @media (max-width: 768px) {
     .intro{
         margin-left: 2%;
         margin-top: 20%;
     }  
-
+.social-img{
+      
+    }
 
 }
 @media (max-width: 1200px) {
     .social{
-        margin-left: 5px;
+        margin-left: 50%;
         margin-top: 65px;
     }
     .social-img img:hover{
