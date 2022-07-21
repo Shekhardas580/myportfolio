@@ -1,0 +1,119 @@
+* {
+    margin:0;
+    padding: 0;
+    cursor: none;
+}
+
+
+html {
+    height: 100%;
+}
+
+body{
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.cursor{
+    z-index: 999;
+    position: fixed;
+    background: #2696E8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696E8,
+                0 0 60px #2696E8,
+                0 0 100px #2696E8;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+@keyframes colors{
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+}
+  
+  .cursor:before{
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+  }
+.intro{
+    color: rgb(239, 65, 201);
+    margin-top: 30px;
+    margin-left: 1%;
+}
+.name{
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    transition: all 0.3s ease;
+    font-size: calc(12px + 3.8vw);
+}
+.name .letter {
+    display:inline-block;
+    line-height: 1em;
+}
+.post{
+    letter-spacing: 0.1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(9px + 2vw);
+}
+.social{
+    display: flex;
+    margin-left: 30px;
+    margin-top:310px;
+}
+.social-img {
+    display: flex;
+    position: relative;
+    width:26px;
+    height: 26px;
+    padding: 12px;
+}
+.social-img img{
+    filter: grayscale();
+    transition: filter 0.4s ease-in-out;
+}
+.social-img img:hover{
+    filter: none;
+    transform: translateY(0) scale(2.4);
+}
+
+
+@media (max-width: 600px) {
+    .intro{
+        margin-left: 1%;
+    }
+}
+@media (max-width: 768px) {
+    .intro{
+        margin-top: 20%;
+    }  
+
+}
+@media (max-width: 1200px) {
+    .social{
+        margin-left: 5px;
+        margin-top: 65px;
+    }
+    .social-img img:hover{
+        transform: none;
+    }
+    .social-img {
+        padding: 8px;
+    }
+}
