@@ -14,8 +14,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    min-height: 100%;
 }
 .cursor{
     z-index: 999;
@@ -90,7 +90,7 @@ body{
 }
 .social-img img:hover{
     filter: none;
-    transform: translateY(0) scale(2.4);
+    transform: translateY(0) scale(2.0);
 }
 
 
@@ -102,19 +102,13 @@ body{
         margin-left: 2%;
         margin-top: 20%;
     }  
-    .social {
-        margin-left: 50%;
-    }
-.social-img{
-      
+    .social{
+        margin-left: 40%;
+        margin-top: 30px;
     }
 
 }
 @media (max-width: 1200px) {
-    .social{
-        margin-left: 2%;
-        margin-top: 65px;
-    }
     .social-img img:hover{
         transform: none;
     }
