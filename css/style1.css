@@ -102,6 +102,9 @@ body{
         margin-left: 2%;
         margin-top: 20%;
     }  
+    .social {
+        margin-left: 50%;
+    }
 .social-img{
       
     }
@@ -109,7 +112,7 @@ body{
 }
 @media (max-width: 1200px) {
     .social{
-        margin-left: 50%;
+        margin-left: 2%;
         margin-top: 65px;
     }
     .social-img img:hover{
